@@ -1,0 +1,8 @@
+body{background-color: black;}
+
+p.solid{
+    border-style: solid; border-width: 5px 20px;
+}
+
+
+
