@@ -1,15 +1,15 @@
 /*body{background-color: black;} */
 
-p.solid{
+/*p.solid{
     border-style: solid; border-width: 5px 20px;
-}
+} */
 
-div{
+/*div{
     width: 500px;
     padding: 50px;
     border: 5px solid black;
     margin: 0;
-}
+} */
 
 :root{font-size: 16px;
     font-family: 'Open sans';
@@ -118,7 +118,7 @@ main{
 }
 
 .logo{
-    front-weight: bold;
+    font-weight: bold;
     text-transform: upeprcase;
     margin-bottom: 1rem;
     text-align: center;
@@ -140,6 +140,27 @@ main{
 }
 
 @media only screen and (max-width: 600px){
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    main{
+        margin: 0;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -157,6 +178,5 @@ main{
 .navbar:hover .link-text{
     display: inline;
     transition: opacity var(--transition-speed);
-    
-}
+    }
 }
